@@ -53,11 +53,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier:"MovieCell") as! MovieCell
         
         let movie = movies[indexPath.row]
-        let title = movie["title"]
+        let title = movie["title"] as! String
         let synposis = movie["overview"] as! String
         
         cell.titleLabel.text = title
-        cell.synposisLabel.text = synposis
+        cell.synopsisLabel.text = synposis
         
         return cell
     }
