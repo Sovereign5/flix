@@ -26,7 +26,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ISa-eA-SVV">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ISa-eA-SVV">
                                                     <rect key="frame" x="20" y="2" width="102" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -50,6 +50,7 @@
                                             <outlet property="posterView" destination="ISa-eA-SVV" id="7lx-Pb-CUl"/>
                                             <outlet property="synopsisLabel" destination="P6P-LK-lHs" id="oU9-ez-nDM"/>
                                             <outlet property="titleLabel" destination="10r-lC-Brz" id="5Ku-sJ-Ujo"/>
+                                            <segue destination="UpD-od-emz" kind="show" id="ds4-ND-laz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -72,6 +73,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="A4C-AC-m31">
+            <objects>
+                <viewController id="UpD-od-emz" customClass="MovieDetailsViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p2q-dr-Obg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="41r-ue-uRi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y3Z-oL-ugN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49y-60-lP3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2139" y="113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ly3-6v-UhM">
